@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ### BEGIN INIT INFO
-# Provides:             openerp-server
+# Provides:             odoo11
 # Required-Start:       $remote_fs $syslog
 # Required-Stop:        $remote_fs $syslog
 # Should-Start:         $network
@@ -13,10 +13,10 @@
 ### END INIT INFO
 
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON=/opt/odoo/odoo/padrao/tauga
-NAME=odoo
+DAEMON=/opt/odoo11/odoo/odoo-bin
+NAME=odoo11
 DESC=odoo
-CONFIG=/opt/odoo/odoo/tauga.cfg
+CONFIG=/opt/odoo11/odoo/odoo-config
 LOGFILE=/var/log/odoo/odoo.log
 USER=odoo
 PIDFILE=/var/run/${NAME}.pid
